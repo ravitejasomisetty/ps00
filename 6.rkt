@@ -5,8 +5,8 @@
 ;GIVEN : the coefficients of any quadratic equation a,b and c
 ;RETURNS : one of its roots using the quadratic formula for roots of a quadratic equation
 ;EXAMPLES:
-;(quadratic-root 10 2 10)
-;(quadratic-root -1 10 0.1)
+;(quadratic-root 10 2 10) => -0.1+0.99498743710662i
+;(quadratic-root -1 10 0.1) => -0.009990019950139484
 (define (quadratic-root a b c)
   
   (/ (+ (sqrt (discriminant a b c)) (- b)) (* a 2)))
@@ -18,8 +18,8 @@
 ;GIVEN : the coefficients of any quadratic equation a,b and c
 ;RETURNS : the discriminant of the quadratic equation
 ;EXAMPLES:
-;(discriminant 10 2 10)
-;(discriminant -1 10 0.1)
+;(discriminant 10 2 10) => -396
+;(discriminant -1 10 0.1) => 100.4
 (define (discriminant a b c)
   (- (sqr b) (* 4 a c)))
 
