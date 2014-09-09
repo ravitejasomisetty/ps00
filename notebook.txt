@@ -1,0 +1,6 @@
+Date	Who	Start	Stop	Interruptions	   Question	 	TimeonTask	Comments
+30-Aug	RS	18:00	18:15			Installing DrRacket	15		
+30-Aug	RS	18:20	18:30			Installing GitHubClient 10		**Installed with my personal gmail**
+30-Aug	RS	18:35	18:40			SignUp for CCIS		5		
+5-Sep	RS	15:30	15:32			Changed Github settings	2		**Changed primary email to my husky email**
+6-Sep	RS	15:15	15:30		5	SignUp for Piazza	10		**Installed with CCIS email**
