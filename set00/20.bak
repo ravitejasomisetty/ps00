@@ -7,7 +7,7 @@
 
 (define chest (rectangle 40 50 "solid" "red"))
 
- c
+
 
 (define hand1 (rectangle 40 5 "solid" "red" ))
 ;hand1
