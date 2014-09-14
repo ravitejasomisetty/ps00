@@ -1,0 +1,17 @@
+;; The first three lines of this file were inserted by DrRacket. They record metadata
+;; about the language level of this file in a form that our tools can easily process.
+#reader(lib "htdp-beginner-reader.ss" "lang")((modname |28|) (read-case-sensitive #t) (teachpacks ((lib "image.rkt" "teachpack" "2htdp") (lib "universe.rkt" "teachpack" "2htdp"))) (htdp-settings #(#t constructor repeating-decimal #f #t none #f ((lib "image.rkt" "teachpack" "2htdp") (lib "universe.rkt" "teachpack" "2htdp")))))
+;string-list : ListofStrings -> String
+;GIVEN : list of string values
+;RETURNS : one image with all strings together
+;EXAMPLES:
+;(list (ravi teja)) -> ravi teja
+
+;DESIGN STRATEGY : Functional Composition
+(define (string-list a)
+  (cond [(empty? a) (text "" 20 "red")]
+        [else (beside (text (string-append (first a) " ") 20 "red")  (string-list (rest a)))])
+  
+  )
+
+(string-list (list "abc" "def"))
